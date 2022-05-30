@@ -20,3 +20,6 @@ Ruby version 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 
 Rails version 7.0.3
 
+Bootstrap version 4.6
+
+Base de Datos: Se trabajó con las tablas generadas por Scaffold
