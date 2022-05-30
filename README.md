@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Archivos del Taller de Soporte: Ruby on Rails (Scaffold) Desarrollado por:
+  
+  De La Rosa Altahona Adrian Steven
+  Gutierrez Sanjuan Juan Diego
+  Perez Tirado Ariel Jose
+  
+ 
+ Curso de Soporte de Ingenieria P02, Programa de Ingenieria de Sistemas
+ 
+ Universidad Simón Bolívar de Baranquilla.
 
-Things you may want to cover:
 
-* Ruby version
+Importante:
 
-* System dependencies
+Taller desarrollado con:
 
-* Configuration
+Ruby version 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 
-* Database creation
+Rails version 7.0.3
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
