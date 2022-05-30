@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+<h3>Listar Multa</h3>
+
+
+<p>
+<strong>ID: </strong>
+<%= @multum.id%>
+</p>
+
+<p>
+<strong>Fecha: </strong>
+<%= @multum.fecha%>
+</p>
+
+<p>
+<strong>Estado: </strong>
+<%= @multum.estado%>
+</p>
+
+
+<p>
+<strong> Prestamo: </strong>
+
+
+        <%= @multum.Prestamo_id.to_s + " - Realizado por " +
+        @multum.Prestamo.Usuario.nombres + " " +
+        @multum.Prestamo.Usuario.apellidos + " en " +
+        @multum.Prestamo.fecha.to_s  %>
+        
+</p>
+
+
+
+
+<div>
+ 
+  <%= link_to "Back to multa", multa_path %>
+
+  
+</div>

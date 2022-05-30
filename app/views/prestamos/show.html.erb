@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<h3>Listar Prestamo</h3>
+
+
+<p>
+<strong>ID: </strong>
+<%= @prestamo.id%>
+</p>
+
+
+<p>
+<strong>Estado: </strong>
+<%= @prestamo.estado%>
+</p>
+
+<p>
+<strong>Usuario: </strong>
+<%= @prestamo.Usuario.nombres + " " + @prestamo.Usuario.apellidos %>
+</p>
+
+<br>
+
+<div>
+ 
+  <%= link_to "Back to prestamos", prestamos_path %>
+
+</div>

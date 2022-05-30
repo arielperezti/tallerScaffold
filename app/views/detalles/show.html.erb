@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<h3>Listar Detalle</h3>
+
+
+<p>
+<strong>ID: </strong>
+<%= @detalle.id%>
+</p>
+
+<p>
+<strong>Cantidad: </strong>
+<%= @detalle.cantidad%>
+</p>
+
+<p>
+<strong>Prestamo: </strong>
+<%= @detalle.Prestamo_id.to_s + " - Realizado por " +
+@detalle.Prestamo.Usuario.nombres + " " +
+@detalle.Prestamo.Usuario.apellidos + " en " +
+@detalle.Prestamo.fecha.to_s  %>
+</p>
+
+<p>
+<strong>Libro: </strong>
+<%= @detalle.Libro_id.to_s + " - " +
+@detalle.Libro.titulo + " en " +
+@detalle.Libro.anyo.to_s %>
+</p>
+
+
+<div>
+ 
+  <%= link_to "Back to detalles", detalles_path %>
+
+  
+</div>

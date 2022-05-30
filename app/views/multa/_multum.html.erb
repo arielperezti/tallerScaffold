@@ -1,0 +1,38 @@
+<div id="<%= dom_id multum %>">
+<tr>
+
+        <td>
+        <%= multum.valor %>
+        </td>
+
+        <td>
+        <%= multum.fecha %>
+        </td>
+
+        <td>
+        <%= multum.estado %>
+        </td>
+
+        <td>
+        <%= multum.Prestamo_id.to_s + " - Realizado por " +
+        multum.Prestamo.Usuario.nombres + " " +
+        multum.Prestamo.Usuario.apellidos + " en " +
+        multum.Prestamo.fecha.to_s  %>
+        </td>
+
+
+        <td>
+        
+        <%= link_to "Editar", edit_multum_path(multum) , :class => "btn btn-primary"%> 
+        
+        </td>
+        
+        <td>
+        
+        <%= button_to "Eliminar", multum, method: :delete, data: {confirm: 'Are you sure?' }, :class => "btn btn-danger"%>
+
+        </td>
+</tr>
+
+
+</div>

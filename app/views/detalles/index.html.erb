@@ -1,0 +1,37 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Detalles</h1>
+<br>
+
+<%= link_to "Nuevo detalle", new_detalle_path, :class => "btn btn-success" %>
+
+
+
+<br><br><br>
+
+<div id="detalles">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Prestamo</th>
+      <th scope="col">Libro</th>
+      <th scope="col"> </th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @detalles.each do |detalle| %>
+    <%= render detalle %>
+    
+    <% end %>
+    
+
+  </tbody>
+</table>
+
+  
+</div>
+
+<br>
+

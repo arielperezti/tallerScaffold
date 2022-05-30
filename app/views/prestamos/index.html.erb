@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Prestamos</h1>
+
+<br>
+
+<%= link_to "Nuevo prestamo", new_prestamo_path, :class => "btn btn-success" %>
+
+
+
+<br><br><br>
+
+<br>
+<div id="prestamos">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Usuario</th>
+      <th scope="col"> </th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @prestamos.each do |prestamo| %>
+    <%= render prestamo %>
+    
+    <% end %>
+    
+
+  </tbody>
+</table>
+
+  
+</div>
+
+<br>
+

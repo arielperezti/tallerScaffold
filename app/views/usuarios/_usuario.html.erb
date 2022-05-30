@@ -1,0 +1,49 @@
+<div id="<%= dom_id usuario %>">
+  
+
+<tr>
+        <td>
+        <%= usuario.nombres + " " + usuario.apellidos%>
+        </td>
+
+        <td>
+        <%= usuario.direccion %>
+        </td>
+
+        <td>
+        <%= usuario.telefono %>
+        </td>
+
+        <td>
+        <%= usuario.login %>
+        </td>
+
+
+        <td>
+        <%= usuario.password %>
+        </td>
+
+        <td>
+        <%= usuario.email %>
+        </td>
+
+
+
+        <td>
+        
+        <%= link_to "Editar", edit_usuario_path(usuario) , :class => "btn btn-primary"%> 
+        
+        </td>
+        
+        <td>
+        
+        <%= button_to "Eliminar", usuario, method: :delete, data: {confirm: 'Are you sure?' }, :class => "btn btn-danger"%>
+
+        </td>
+
+      
+    </tr>
+
+</div>
+
+

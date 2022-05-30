@@ -1,0 +1,40 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Usuarios</h1>
+<br>
+
+<div id="usuarios">
+
+<%= link_to "Nuevo usuario", new_usuario_path, :class => "btn btn-success" %>
+<br><br><br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre Completo</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Login</th>
+      <th scope="col">Password</th>
+      <th scope="col">Email</th>
+      <th scope="col"> </th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @usuarios.each do |usuario| %>
+    <%= render usuario %>
+    
+    <% end %>
+    
+
+  </tbody>
+</table>
+
+  
+</div>
+
+<br>
+
+
+

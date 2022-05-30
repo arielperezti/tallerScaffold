@@ -1,0 +1,32 @@
+<div id="<%= dom_id libro %>">
+
+<tr>
+        <td>
+        <%= libro.titulo %>
+        </td>
+
+        <td>
+        <%= libro.autor %>
+        </td>
+
+        <td>
+        <%= libro.anyo %>
+        </td>
+
+
+        <td>
+        
+        <%= link_to "Editar", edit_libro_path(libro) , :class => "btn btn-primary"%> 
+        
+        </td>
+        
+        <td>
+        
+        <%= button_to "Eliminar", libro, method: :delete, data: {confirm: 'Are you sure?' }, :class => "btn btn-danger"%>
+
+        </td>
+
+      
+    </tr>
+
+</div>

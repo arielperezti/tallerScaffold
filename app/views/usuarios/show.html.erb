@@ -1,0 +1,51 @@
+<p style="color: green"><%= notice %></p>
+
+
+<h3>Listar Usuario</h3>
+
+
+<p>
+<strong>ID: </strong>
+<%= @usuario.id%>
+</p>
+
+
+<p>
+<strong>Nombre Completo: </strong>
+<%= @usuario.nombres + " " + @usuario.apellidos%>
+</p>
+
+<p>
+<strong>Direccion: </strong>
+<%= @usuario.direccion%>
+</p>
+
+<p>
+<strong>Telefono </strong>
+<%= @usuario.telefono%>
+</p>
+
+<p>
+<strong>Login: </strong>
+<%= @usuario.login%>
+</p>
+
+<p>
+<strong>Password: </strong>
+<%= @usuario.password%>
+</p>
+
+<p>
+<strong>Email: </strong>
+<%= @usuario.email%>
+</p>
+
+
+
+
+
+<div>
+
+  <%= link_to "Back to usuarios", usuarios_path %>
+
+</div>

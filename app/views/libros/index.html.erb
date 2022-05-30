@@ -1,0 +1,45 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Libros</h1>
+
+<br>
+
+
+<div id="libros">
+
+<%= link_to "Nuevo Libro", new_libro_path, :class => "btn btn-success" %>
+
+
+
+<br><br><br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Titulo</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Año</th>
+      <th scope="col"> </th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @libros.each do |libro| %>
+
+    <%= render libro %>
+    
+    <% end %>
+    
+
+  </tbody>
+</table>
+
+  
+</div>
+
+<br>
+
+
+
+
+

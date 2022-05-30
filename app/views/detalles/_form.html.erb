@@ -1,0 +1,36 @@
+<%= form_with(model: detalle) do |form| %>
+  <% if detalle.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(detalle.errors.count, "error") %> prohibited this detalle from being saved:</h2>
+
+      <ul>
+        <% detalle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cantidad, style: "display: block" %>
+    <%= form.number_field :cantidad %>
+  </div>
+
+  <div>
+  Prestamo:
+  <br>
+  <%= form.select :Prestamo_id, options_for_select(Prestamo.all.map{|s| [s.id.to_s + " - Realizado por " + s.Usuario.nombres + " " + s.Usuario.apellidos + " en " + s.fecha.to_s, s.id]}) %>
+  </div>
+  <br>
+ 
+  <div>
+  Libro:
+  <br>
+  <%= form.select :Libro_id, options_for_select(Libro.all.map{|s| [s.id.to_s + " - " + s.titulo + " por " + s.autor + " en " + s.anyo.to_s, s.id]}) %>
+  </div>
+  <br>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
